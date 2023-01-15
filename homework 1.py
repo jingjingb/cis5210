@@ -2,10 +2,10 @@
 # CIS 521: Homework 1
 ############################################################
 
-student_name = "Type your full name here."
+student_name = "Jingjing Bai"
 
 # This is where your grade report will be sent.
-student_email = "Type your preferred email address here." 
+student_email = "baijingj@seas.upenn.edu" 
 
 ############################################################
 # Section 1: Python Concepts
