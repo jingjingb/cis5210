@@ -163,14 +163,14 @@ def POS_tag(sentence):
     #print(lower)
     tokens = nltk.word_tokenize(lower)
     #print(tokens)
-    remove = [word for word in tokens if word not in stop_words]
+    remove = [word for word in tokens if word not in stop_words and word.isalpha()]
     #print(remove)
     from nltk import pos_tag
     tokens_tag = pos_tag(remove)
     #print("After Token:",tokens_tag)
     return tokens_tag
 
-print(POS_tag("The Force will be with you. Always."))
+#print(POS_tag("The Force don't will' be with you. Always."))
 
 
 
@@ -181,19 +181,13 @@ print(POS_tag("The Force will be with you. Always."))
 ############################################################
 
 feedback_question_1 = """
-Type your response here.
-Your response may span multiple lines.
-Do not include these instructions in your response.
+>5 hours
 """
 
 feedback_question_2 = """
-Type your response here.
-Your response may span multiple lines.
-Do not include these instructions in your response.
+The nltk part is confusing. the instruction is only about how to download data without how to import the data.
 """
 
 feedback_question_3 = """
-Type your response here.
-Your response may span multiple lines.
-Do not include these instructions in your response.
+A good practice of python
 """
